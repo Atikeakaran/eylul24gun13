@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kutular</title>
+    <style>
+        .kutu{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            margin: 1rem;
+        }
+        .burak{
+            transform: rotate(45deg);
+            background-color: yellow;
+        }
+        .bur{
+            transform: scale(1.5) translate(100px, -25px);
+            background-color: pink;
+        }
+        @keyframes Altugsahneleri{
+            from{transform: rotate(0deg);}
+            from{transform: rotate(360deg);}
+        }
+        .altug{
+            animation: Altugsahneleri 1s infinite;
+            /*infinite  hızlanır yavaşlar
+            linear infinite ile sabit hızda döner.*/
+        }
+    </style>
+</head>
+<body>
+    <div class="kutu altug"></div>
+    <div class="kutu bur"></div>
+    <div class="kutu burak"></div>
+    <div class="kutu"></div>
+</body>
+</html>
